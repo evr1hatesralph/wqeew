@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - SoleStyle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>SoleStyle</h1>
+            <p>Walk in Comfort, Step in Style</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="men.html">Men</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="new-arrivals.html">New Arrivals</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <a href="account.html">My Account</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="cart.html">Cart (3)</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> > Shopping Cart
+        </div>
+
+        <section class="cart-container">
+            <h1>Your Shopping Cart</h1>
+
+            <div class="cart-content">
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="/api/placeholder/100/100" alt="Ultra Boost Running Shoes">
+                        </div>
+                        <div class="item-details">
+                            <h3><a href="product1.html">Ultra Boost Running Shoes</a></h3>
+                            <p>Color: Black | Size: 9.5</p>
+                            <div class="item-actions">
+                                <a href="#">Move to Wishlist</a>
+                                <a href="#">Remove</a>
+                            </div>
+                        </div>
+                        <div class="item-quantity">
+                            <label for="qty-1">Qty:</label>
+                            <select id="qty-1" name="qty-1">
+                                <option value="1">1</option>
+                                <option value="2" selected>2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="item-price">
+                            <p class="unit-price">$129.99</p>
+                            <p class="total-price">$259.98</p>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="/api/placeholder/100/100" alt="Leather Oxford Dress Shoes">
+                        </div>
+                        <div class="item-details">
+                            <h3><a href="product3.html">Leather Oxford Dress Shoes</a></h3>
+                            <p>Color: Brown | Size: 10</p>
+                            <div class="item-actions">
+                                <a href="#">Move to Wishlist</a>
+                                <a href="#">Remove</a>
+                            </div>
+                        </div>
+                        <div class="item-quantity">
+                            <label for="qty-2">Qty:</label>
+                            <select id="qty-2" name="qty-2">
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="item-price">
+                            <p class="unit-price">$149.99</p>
+                            <p class="total-price">$149.99</p>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="/api/placeholder/100/100" alt="Classic Canvas Sneakers">
+                        </div>
+                        <div class="item-details">
+                            <h3><a href="product2.html">Classic Canvas Sneakers</a></h3>
+                            <p>Color: White | Size: 9</p>
+                            <div class="item-actions">
+                                <a href="#">Move to Wishlist</a>
+                                <a href="#">Remove</a>
+                            </div>
+                        </div>
+                        <div class="item-quantity">
+                            <label for="qty-3">Qty:</label>
+                            <select id="qty-3" name="qty-3">
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="item-price">
+                            <p class="unit-price">$59.99</p>
+                            <p class="total-price">$59.99</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-actions">
+                    <button class="update-cart">Update Cart</button>
+                    <a href="index.html" class="continue-shopping">Continue Shopping</a>
+                    <button class="clear-cart">Clear Cart</button>
+                </div>
+
+                <div class="cart-summary">
+                    <h2>Order Summary</h2>
+                    <div class="summary-item">
+                        <span>Subtotal (4 items):</span>
+                        <span>$469.96</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Shipping:</span>
+                        <span>Free</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Tax:</span>
+                        <span>$37.60</span>
+                    </div>
+                    <div class="summary-item total">
+                        <span>Total:</span>
+                        <span>$507.56</span>
+                    </div>
+
+                    <div class="promo-code">
+                        <input type="text" placeholder="Enter Promo Code">
+                        <button>Apply</button>
+                    </div>
+
+                    <button class="checkout-button">Proceed to Checkout</button>
+                    <div class="payment-methods">
+                        <p>We Accept:</p>
+                        <div class="payment-icons">
+                            <span>Visa</span>
+                            <span>Mastercard</span>
+                            <span>PayPal</span>
+                            <span>American Express</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <div class="footer-section">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="men.html">Men's Shoes</a></li>
+                    <li><a href="women.html">Women's Shoes</a></li>
+                    <li><a href="kids.html">Kids' Shoes</a></li>
+                    <li><a href="new-arrivals.html">New Arrivals</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="shipping.html">Shipping Policy</a></li>
+                    <li><a href="returns.html">Returns & Exchanges</a></li>
+                    <li><a href="size-guide.html">Size Guide</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com/ninaysabelle.delossantos">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SoleStyle. All Rights Reserved.</p>
+            <div class="footer-legal">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="cart.js"></script>
+</body>
+</html>

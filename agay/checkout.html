@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - SoleStyle</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>SoleStyle</h1>
+            <p>Walk in Comfort, Step in Style</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="men.html">Men</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="new-arrivals.html">New Arrivals</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <a href="account.html">My Account</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="cart.html">Cart (3)</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> > <a href="cart.html">Shopping Cart</a> > Checkout
+        </div>
+
+        <section class="checkout-container">
+            <h1>Checkout</h1>
+            
+            <div class="checkout-progress">
+                <div class="progress-step active">
+                    <span class="step-number">1</span>
+                    <span class="step-text">Shipping</span>
+                </div>
+                <div class="progress-step">
+                    <span class="step-number">2</span>
+                    <span class="step-text">Payment</span>
+                </div>
+                <div class="progress-step">
+                    <span class="step-number">3</span>
+                    <span class="step-text">Review</span>
+                </div>
+            </div>
+
+            <div class="checkout-sections">
+                <div class="checkout-form">
+                    <section class="shipping-section">
+                        <h2>Shipping Address</h2>
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstname">First Name *</label>
+                                    <input type="text" id="firstname" name="firstname" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname">Last Name *</label>
+                                    <input type="text" id="lastname" name="lastname" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address1">Address Line 1 *</label>
+                                <input type="text" id="address1" name="address1" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address2">Address Line 2</label>
+                                <input type="text" id="address2" name="address2">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">City *</label>
+                                    <input type="text" id="city" name="city" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="state">State/Province *</label>
+                                    <select id="state" name="state" required>
+                                        <option value="">Select State</option>
+                                        <option value="AL">Alabama</option>
+                                        <option value="AK">Alaska</option>
+                                        <!-- Other states would be listed here -->
+                                        <option value="WY">Wyoming</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="zipcode">Zip/Postal Code *</label>
+                                    <input type="text" id="zipcode" name="zipcode" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="country">Country *</label>
+                                    <select id="country" name="country" required>
+                                        <option value="US">United States</option>
+                                        <option value="CA">Canada</option>
+                                        <option value="UK">United Kingdom</option>
+                                        <!-- Other countries would be listed here -->
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group checkbox">
+                                <input type="checkbox" id="billing-same" name="billing-same" checked>
+                                <label for="billing-same">Billing address same as shipping</label>
+                            </div>
+                        </form>
+                    </section>
+
+                    <section class="shipping-method">
+                        <h2>Shipping Method</h2>
+                        <div class="shipping-options">
+                            <div class="shipping-option">
+                                <input type="radio" id="standard" name="shipping" value="standard" checked>
+                                <label for="standard">
+                                    <span class="shipping-name">Standard Shipping</span>
+                                    <span class="shipping-time">3-5 Business Days</span>
+                                    <span class="shipping-price">Free</span>
+                                </label>
+                            </div>
+                            <div class="shipping-option">
+                                <input type="radio" id="express" name="shipping" value="express">
+                                <label for="express">
+                                    <span class="shipping-name">Express Shipping</span>
+                                    <span class="shipping-time">2 Business Days</span>
+                                    <span class="shipping-price">$9.99</span>
+                                </label>
+                            </div>
+                            <div class="shipping-option">
+                                <input type="radio" id="overnight" name="shipping" value="overnight">
+                                <label for="overnight">
+                                    <span class="shipping-name">Overnight Shipping</span>
+                                    <span class="shipping-time">Next Business Day</span>
+                                    <span class="shipping-price">$19.99</span>
+                                </label>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="form-actions">
+                        <a href="cart.html" class="back-btn">Back to Cart</a>
+                        <button class="continue-btn">Continue to Payment</button>
+                    </div>
+                </div>
+
+                <div class="order-summary">
+                    <h2>Order Summary</h2>
+                    <div class="summary-items">
+                        <div class="summary-item">
+                            <div class="item-image">
+                                <img src="img/c.jpg" alt="Ultra Boost Running Shoes">
+                            </div>
+                            <div class="item-details">
+                                <h4>Ultra Boost Running Shoes</h4>
+                                <p>Color: Black | Size: 9.5</p>
+                                <p>Qty: 2</p>
+                            </div>
+                            <div class="item-price">$259.98</div>
+                        </div>
+                        <div class="summary-item">
+                            <div class="item-image">
+                                <img src="img/g.jfif" alt="Leather Oxford Dress Shoes">
+                            </div>
+                            <div class="item-details">
+                                <h4>Leather Oxford Dress Shoes</h4>
+                                <p>Color: Brown | Size: 10</p>
+                                <p>Qty: 1</p>
+                            </div>
+                            <div class="item-price">$149.99</div>
+                        </div>
+                        <div class="summary-item">
+                            <div class="item-image">
+                                <img src="img/f.jpg" alt="Classic Canvas Sneakers">
+                            </div>
+                            <div class="item-details">
+                                <h4>Classic Canvas Sneakers</h4>
+                                <p>Color: White | Size: 9</p>
+                                <p>Qty: 1</p>
+                            </div>
+                            <div class="item-price">$59.99</div>
+                        </div>
+                    </div>
+
+                    <div class="summary-totals">
+                        <div class="summary-row">
+                            <span>Subtotal:</span>
+                            <span>$469.96</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping:</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax:</span>
+                            <span>$37.60</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total:</span>
+                            <span>$507.56</span>
+                        </div>
+                    </div>
+
+                    <div class="promo-code">
+                        <input type="text" placeholder="Enter Promo Code">
+                        <button>Apply</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <div class="footer-section">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="men.html">Men's Shoes</a></li>
+                    <li><a href="women.html">Women's Shoes</a></li>
+                    <li><a href="kids.html">Kids' Shoes</a></li>
+                    <li><a href="new-arrivals.html">New Arrivals</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="shipping.html">Shipping Policy</a></li>
+                    <li><a href="returns.html">Returns & Exchanges</a></li>
+                    <li><a href="size-guide.html">Size Guide</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com/ninaysabelle.delossantos">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SoleStyle. All Rights Reserved.</p>
+            <div class="footer-legal">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
